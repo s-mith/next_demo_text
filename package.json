@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "12.1.5",
+    "node-html-parser": "^5.3.3",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native-web": "^0.17.7"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5"
+  }
+}

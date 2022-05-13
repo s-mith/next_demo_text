@@ -1,0 +1,193 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #251f29;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* styling for Item_Simple */
+.simpleItemImage{
+  width: 100%;
+}
+
+.simpleItemContainer{
+  width: 15.66%;
+  /* inline */
+  display: inline-block;
+  vertical-align: top;
+  /* same amount of space on both sides */
+
+  text-align: center;
+
+  background-color:#3b383f;
+
+  margin: 0.5%;
+
+  
+}
+
+.simpleItemFloat{
+  /* span go to the left */
+  float: right;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  color:aliceblue;
+}
+
+.image-container-large{
+  position: relative;
+}
+
+.stickers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.image_container{
+  position: relative;
+}
+
+.stickerInfo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.stickerCount{
+  color: aliceblue;
+  text-align: left;
+}
+
+.stickerPrice{
+  color:rgb(1, 255, 1);
+  text-align: left;
+}
+
+.simpleItemPrice{
+  float: left;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  color:rgb(1, 255, 1);
+  font-weight: bold;
+}
+
+.cool-background{
+  background-image: url("/float.gif");
+  /* make background image 25% transparent */
+
+  background-blend-mode: color-burn;
+}
+
+
+/* styling for itempages */
+
+.bigWhite{
+  color: aliceblue;
+  font-size: 1.5rem;
+  /* center text */
+  margin: 0.5rem;
+
+}
+
+.home-button{
+  background-color: #3b383f;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.bigGreen{
+  color: rgb(1, 255, 1);
+  font-size: 1.5rem;
+  margin : 0.5rem;
+}
+
+.Header{
+  text-align: center;
+}
+
+.SteamIDInput{
+  /* center input */
+  text-align: center;
+  /* same amount of space on both sides */
+  margin: 0 auto;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .simpleItemContainer{
+    width: 50%;
+    /* inline */
+    display: inline-block;
+    vertical-align: top;
+    /* same amount of space on both sides */
+  
+    text-align: center;
+  
+    background-color:#3b383f;
+    margin: 0%;
+  }
+  .Inventory{
+    padding: 0% !important;
+  }
+}
+
+
+.Item-Info{
+  /* font smaller */
+  font-size: 0.8em;
+}
+
+
+
+.Inventory{
+  padding: 0px 10%;
+}
+
+.item-Page-Main{
+  
+  width: 50%;
+}
+
+.item-title{
+  margin: 0%;
+}
+
+.more-Item-Info{
+  width: 50%;
+
+}
+
+.Item-Page-Image{
+  width: 100%;
+}
+
+.Item-Page{
+  /* flex */
+  display: flex;
+  padding: 0px 10%;
+}
+
+.Item-Tag{
+  display: inline-block;
+  background-color: #ccc;
+  padding: 3px;
+  margin: 3px;
+}
+
