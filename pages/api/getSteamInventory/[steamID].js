@@ -117,10 +117,12 @@ const handleSteamInventory = async (req, res) => {
             let image_list = dummy.querySelectorAll('img')
 
             // get the url from each image
-            for (var i = 0; i < value.iteminfo.stickers.length; i++) {
-                inventory[key].rdCsgoFloat.iteminfo.stickers[i].sticker_url = image_list[i].getAttribute('src')
-                if (allItemPriceData.items_list["Sticker | " + value.iteminfo.stickers[i].name]){
-                    inventory[key].rdCsgoFloat.iteminfo.stickers[i].sticker_price = allItemPriceData.items_list["Sticker | " + value.iteminfo.stickers[i].name].price
+            if (value?.iteminfo?.stickers ) {
+                for (var i = 0; i < value.iteminfo.stickers.length; i++) {
+                    inventory[key].rdCsgoFloat.iteminfo.stickers[i].sticker_url = image_list[i].getAttribute('src')
+                    if (allItemPriceData.items_list["Sticker | " + value.iteminfo.stickers[i].name]){
+                        inventory[key].rdCsgoFloat.iteminfo.stickers[i].sticker_price = allItemPriceData.items_list["Sticker | " + value.iteminfo.stickers[i].name].price
+                    }
                 }
             }
         }
